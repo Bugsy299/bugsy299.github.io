@@ -6,10 +6,15 @@ body
     height: 460px
 }
 
-footer
-{
-    border-bottom: 30px solid gray;
+footer{
+    border-bottom: 50px solid gray;
     margin: center;
+    height:0;
     width: 101%;
-    padding-top: 627px ;
+    padding-top: 627px ;    
+}
+footer img{
+    width: 50px;
+    height: 50px;
+    float:right;
 }

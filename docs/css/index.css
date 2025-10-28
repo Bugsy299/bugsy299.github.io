@@ -1,0 +1,90 @@
+html
+{
+    font-family:'Courier New', Courier, monospace;
+    background-color: #181818;
+    color:white
+}
+
+header
+{
+    border: 2px white none;
+    border-radius: 10px;
+    background-color:#545353;
+    position:sticky; /*This is so the header is easily acessible to the user*/
+    top:0;
+}
+
+header ul 
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly; /*Spaces out the text evenly*/
+}
+
+
+header ul li a
+{
+    display: block;
+    text-decoration: none;
+    color:#666CDE
+}
+
+h1
+{
+    text-align: center;
+}
+
+
+footer
+{
+    text-align: center;
+}
+.row { /*I used flex since it's easier to aligin photos this way*/
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+#typingP1
+{
+    overflow: hidden; /* I wanted to make a typing animation for my name, so I followed a tutorial online, to help me: https://css-tricks.com/snippets/css/typewriter-effect/*/
+    border-right: .10em solid white;
+    white-space:nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+        typing 5.5s steps(40, end),
+        cusor 5s step-end infinite ;
+}
+
+@keyframes typing
+{
+    from { width: 0}
+    to {width: 100%}
+}
+
+
+@keyframes cursor
+{
+    from,to{ border-color: transparent;}
+    50%{border-color: white;}
+}
+
+header ul li a:hover
+{
+   animation-name:hover-animation ; /*This is a hover animation for the text inside the header section*/
+   animation-duration: 5s;
+}
+
+@keyframes hover-animation
+{
+    30%{color:#191E73}
+}

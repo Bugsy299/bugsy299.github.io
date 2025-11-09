@@ -25,3 +25,11 @@ footer img{
     height: 50px;
     float:right;
 }
+.tab div {
+    display: none;
+}
+
+.tab div:target {
+    display: block;
+  
+}
